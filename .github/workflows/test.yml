@@ -11,6 +11,9 @@ on:
       - main
       - staging
 
+env:
+  CARGO_NET_GIT_FETCH_WITH_CLI: true
+
 jobs:
   test:
     name: test
