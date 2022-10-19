@@ -25,8 +25,7 @@ jobs:
           override: true
           profile: minimal
           toolchain: stable
-      - name: Give GitHub Actions access
-        uses: webfactory/ssh-agent@v0.5.4
+      - uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SECRET_REPO_DEPLOY_KEY }}
       - run: cargo test
